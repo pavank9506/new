@@ -1,0 +1,1 @@
+echo "all variable passed tot he script $@"

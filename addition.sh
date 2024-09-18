@@ -7,3 +7,4 @@ echo "the subtraction of $number1 and $number2 is $subtraction"
 
 
 echo "$date"
+echo "pwd"

@@ -3,6 +3,6 @@ number2=$2
 
 subtraction=$(($number1-$number2))
 
-echo "the subtraction of $number1 and $number2 in $subtraction"
+echo "the subtraction of $number1 and $number2 is $subtraction"
 
 

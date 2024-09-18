@@ -6,3 +6,4 @@ subtraction=$(($number1-$number2))
 echo "the subtraction of $number1 and $number2 is $subtraction"
 
 
+echo "$date"

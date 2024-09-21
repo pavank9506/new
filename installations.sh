@@ -20,6 +20,8 @@ then
 
            echo "mysql is not installed please check"
            exit 1
+           else
+               echo "mysql is installed"
 
        fi
 

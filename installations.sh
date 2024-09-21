@@ -22,13 +22,9 @@ then
            exit 1
            else
                echo "mysql is installed"
-
        fi
 
-else
-echo "mysql is installed"
 
-fi
 
 
 

@@ -29,7 +29,7 @@
 # mention if it is installed sucessfully or not.
 
 userid=$(id -u)
-if[ $userid -ne 0 ]
+if [ $userid -ne 0 ]
 then
     echo "please run the script with admin previlages"
     exit 1

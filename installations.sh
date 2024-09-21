@@ -8,23 +8,23 @@ then
 
 fi
 
-dnf list installed git
+dnf list installed mysql
 
 if [ $? -ne 0 ]
 then
 
-    echo "git is not installed installing"
-    dnf install git -y
+    echo "mysql is not installed installing"
+    dnf install mysql -y
 
-if [ $? -ne 0 ]
+      if [ $? -ne 0 ]
 
-     echo "git is not installed please check"
-     exit 1
+           echo "mysql is not installed please check"
+           exit 1
 
-fi
+       fi
 
 else
-echo "git is installed"
+echo "mysql is installed"
 
 fi
 

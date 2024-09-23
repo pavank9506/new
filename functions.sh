@@ -16,34 +16,19 @@ validate(){
       echo "$2 is sucess" 
   fi       
 }
+
 dnf list installed nginx 
-validate $? "listing git"
+if [ $? -ne 0 ]
+then
+    echo "nginx not installed please installed"
+    dnf install nginx -y
+   validate $? " installing nginx"
+fi   
 
-#     dnf install nginx -y
-#     if [ $? -ne 0 ]
-#     then
-#         echo "problem with the script please check"
-#         exit 1
-#     else
-#         echo "nginx installed"
-#     fi
-          
-
-
-# dnf list installed nginx 
-# if [ $? -ne 0 ]
-# then
-#     echo "nginx not installed please installed"
-#     dnf install nginx -y
-#     if [ $? -ne 0 ]
-#     then
-#         echo "problem with the script please check"
-#         exit 1
-#     else
-#         echo "nginx installed"
-#     fi
-# fi            
-
-
-
-#
+dnf list installed mysql
+if [ $? -ne 0 ]
+then
+    echo "mysql not installed please installed"
+    dnf install mysql -y
+    validate $? "installing mysql"
+fi   

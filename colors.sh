@@ -19,7 +19,7 @@ validate(){
 
 R=\e[31m
 G=\e[32m
-N=\e[33m
+N=\e[0m
 
 dnf list installed nginx 
 if [ $? -ne 0 ]

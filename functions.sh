@@ -23,6 +23,8 @@ then
     echo "nginx not installed please installed"
     dnf install nginx -y
    validate $? " installing nginx"
+else
+    echo "nginx is installed"   
 fi   
 
 dnf list installed mysql
@@ -31,4 +33,6 @@ then
     echo "mysql not installed please installed"
     dnf install mysql -y
     validate $? "installing mysql"
+else
+    echo "nginx is installed"    
 fi   
